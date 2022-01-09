@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animition</title>
+    <style>
+        @keyframes sliding {
+            0% {
+                background-color: aqua;
+                left: 0;
+                top: 0;
+            }
+
+            25% {
+                top: 200px;
+                background-color: violet;
+            }
+
+            50% {
+                top: 0;
+                background-color: chartreuse;
+            }
+
+            75% {
+                top: 200px;
+                background-color: darkturquoise;
+            }
+
+            100% {
+                background-color: red;
+                left: 900px;
+                top: 0;
+            }
+
+        }
+
+        .black {
+            width: 1000px;
+            height: 300px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            position: relative;
+            background-color: aqua;
+            animation: sliding 3s ease-in-out 0.5s infinite alternate;
+            animation-play-state: running;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>how to animat thing...</h1>
+    <div class="black">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+
+</html>

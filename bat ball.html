@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bat ball</title>
+    <style>
+        .bat {
+            position: relative;
+            left: 1250px;
+        }
+
+        .fild:hover .bat {
+            transform: rotate(65deg);
+            transform-origin: top left;
+        }
+
+        .fild {
+            border: 3px solid rgb(255, 255, 251);
+            margin-top: 100px;
+        }
+
+        .ball {
+            width: 30px;
+            height: 30px;
+            background-color: rgb(255, 0, 0);
+            border-radius: 15px;
+            position: relative;
+            left: 1130px;
+        }
+
+        .bat {
+            transition: transform 0.3s ease-in;
+        }
+
+        .fild:hover .ball {
+            transform: translate(-1000px, -200px);
+        }
+
+        .ball {
+            transition: transform 2s ease-out 0.30s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fild">
+        <img class="bat" src="img.png" alt="">
+
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
